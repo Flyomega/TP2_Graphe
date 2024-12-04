@@ -1,0 +1,108 @@
+@prefix h: <http://www.inria.fr/human#> .
+@prefix i: <http://www.inria.fr/human/data#> .
+
+i:Alice a h:Woman ;
+  h:hasFriend i:John ;
+  h:name "Alice" .
+
+i:Catherine a h:Woman ;
+  h:hasMother i:Laura ;
+  h:name "Catherine"@fr .
+
+i:David a h:Person ;
+  a h:Researcher ;
+  h:hasFriend i:Gaston ;
+  h:name "David" .
+
+i:Eve a h:Person ;
+  a h:Lecturer ;
+  h:hasFriend i:Alice ;
+  h:hasSpouse i:David ;
+  h:name "Eve" .
+
+i:Flora a h:Woman ;
+  h:age 95 ;
+  h:hasChild i:Pierre ;
+  h:hasSpouse i:Gaston ;
+  h:name "Flora" .
+
+i:Gaston a h:Man ;
+  a h:Researcher ;
+  h:age 102 ;
+  h:hasChild i:Jack ;
+  h:hasChild i:Pierre ;
+  h:name "Gaston" ;
+  h:shirtsize 12 ;
+  h:shoesize 11 ;
+  h:trouserssize 38 .
+
+i:Harry a h:Man ;
+  h:hasChild i:John ;
+  h:hasSpouse i:Sophie ;
+  h:name "Harry" .
+
+i:Jack a h:Man ;
+  h:hasChild i:Harry ;
+  h:hasFriend i:Alice ;
+  h:name "Jack" .
+
+i:Jennifer a h:Woman ;
+  h:hasSpouse i:John ;
+  h:name "Jennifer" .
+
+i:John a h:Person ;
+  h:age 37 ;
+  h:hasParent i:Sophie ;
+  h:list (i:Jean i:Johan i:Johnny) ;
+  h:name "John" ;
+  h:shirtsize 12 ;
+  h:shoesize 14 ;
+  h:trouserssize 44 .
+
+i:Karl a h:Person ;
+  h:age 36 ;
+  h:hasFriend i:Sophie ;
+  h:hasSpouse i:Catherine ;
+  h:shirtsize 9 ;
+  h:shoesize 7 ;
+  h:trouserssize 40 .
+
+i:Laura a h:Person ;
+  a h:Lecturer ;
+  a h:Researcher ;
+  h:hasFriend i:Alice ;
+  h:name "Laura" .
+
+i:Lucas a h:Man ;
+  h:age 12 ;
+  h:hasMother i:Catherine ;
+  h:name "Lucas" ;
+  h:shirtsize 8 ;
+  h:shoesize 7 ;
+  h:trouserssize 28 .
+
+i:Mark a h:Person ;
+  h:age 14 ;
+  h:hasFather i:John ;
+  h:name "Mark" ;
+  h:shirtsize 9 ;
+  h:shoesize 8 ;
+  h:trouserssize 36 .
+
+i:Pierre a h:Man ;
+  h:age 71 ;
+  h:name "Pierre" ;
+  h:shirtsize 9 ;
+  h:shoesize 8 ;
+  h:trouserssize 30 .
+
+i:Sophie a h:Person ;
+  h:name "Sophie"@fr .
+
+i:William a h:Person ;
+  h:age 42 ;
+  h:hasSpouse i:Laura ;
+  h:name "William" ;
+  h:shirtsize 13 ;
+  h:shoesize 10 ;
+  h:trouserssize 46 .
